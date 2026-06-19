@@ -4,7 +4,7 @@ import time
 class ECUDiagnostic:
     """Class to handle ECU diagnostics using CAN FD bus and Vector Hardware"""
 
-    def __init__(self, tx_id, app_name='python-can', channel=0, bitrate=500000, data_bitrate=2000000):
+    def __init__(self, tx_id, app_name='PythonApp', channel=0, bitrate=500000, data_bitrate=2000000): # (0 is CAN1, 1 is CAN2)
         # ECU properties
         self.tx_id = tx_id
 
@@ -132,7 +132,7 @@ class ECUDiagnostic:
 
 def main():
     # Instantiate the object paasing the transmission ID for DIAGNOSTIC_REQUEST_FD_IPC
-    ecu_ipc = ECUDiagnostic(tx_id=0x98DA60F2, channel=0)
+    ecu_ipc = ECUDiagnostic(tx_id=0x98DA60F2)
 
     try:
         # initialize the hardware
