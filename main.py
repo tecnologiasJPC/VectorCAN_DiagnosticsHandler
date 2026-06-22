@@ -21,9 +21,11 @@ class ECUDiagnostic:
         """Connect to the CAN bus using Vector hardware"""
         print(f"Opening connection with Vector VN1610 (Channel {self.channel})...")
         self.bus = can.interface.Bus(
-            bustype='vector', 
+            interface='vector', 
+            app_name=self.app_name,
             channel=self.channel, 
             bitrate=self.bitrate, 
+            fd=True,
             data_bitrate=self.data_bitrate
         )
         print("Connection CAN established.")
@@ -46,7 +48,7 @@ class ECUDiagnostic:
             is_fd=True
         )
 
-        print(f"\n[TX] ID: {hex(self.tx_id)}| Payload: {[hex(b) for b in payload]}")
+        print(f"[TX] ID: {hex(self.tx_id)}| Payload: {[hex(b) for b in payload]}")
         self.bus.send(tx_message)
         start_time = time.time()
         expected_rx_service = service_tx + 0x40  # Expected response service ID
