@@ -10,6 +10,6 @@ https://www.vector.com/int/en/download/xl-driver-library/
 
 ![HardwareManager](configurationValues.JPG)
 
-# Infrastructure status
+# Infrastructure status tab
 
 ![HardwareManager2](configurationValues2.JPG)
