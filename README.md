@@ -11,6 +11,6 @@ https://www.vector.com/int/en/download/xl-driver-library/
 ![HardwareManager](configurationValues.JPG)
 
 # Infrastructure status tab
-
+For this script only one CAN channel is required.
 ![HardwareManager2](configurationValues2.JPG)
 
