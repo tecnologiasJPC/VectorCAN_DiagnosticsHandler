@@ -15,3 +15,4 @@ For this script only one CAN channel is required.
 
 ![HardwareManager2](configurationValues2.JPG)
 
+This script has been tested for CAN regular size data frame.
