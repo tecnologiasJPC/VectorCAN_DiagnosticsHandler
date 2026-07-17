@@ -1,3 +1,5 @@
+This script has been tested for CAN regular size data frame and no transport protocol, only raw values.
+
 # Install Vector Driver Setup
 This make VN1610 discoverable in windows.
 https://www.vector.com/int/en/download/vector-driver-setup-26-20-0-for-windows-10-and-11/
@@ -15,4 +17,3 @@ For this script only one CAN channel is required.
 
 ![HardwareManager2](configurationValues2.JPG)
 
-This script has been tested for CAN regular size data frame.
