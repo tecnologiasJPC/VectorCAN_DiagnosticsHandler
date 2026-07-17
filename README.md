@@ -1,4 +1,4 @@
-This script has been tested for CAN regular size data frame and no transport protocol, only raw values.
+This script has been tested for CAN FD size data frame and no transport protocol, only raw values.
 
 # Install Vector Driver Setup
 This make VN1610 discoverable in windows.
